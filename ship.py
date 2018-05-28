@@ -13,7 +13,10 @@ class Ship():
 		self.moving_left = False
 		self.ai_settings = ai_settings
 		self.center = float(self.rect.centerx)
-		
+	def center_ship(self):
+		self.center = self.screen_rect.centerx
+
+
 	def blitme(self):
 		self.screen.blit(self.image, self.rect)
 
